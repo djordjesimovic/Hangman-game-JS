@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    flex-direction: column;
+    gap: 4rem;
+}
+h1{
+    font-size: 5rem;
+}
+.letters{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 7rem;
+}
+.letters button{
+    padding: 1.7rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.word{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.word-letter{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.7rem;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.word-letter:focus{
+    outline: 0;
+}
+.lives-msg{
+    font-size: 3.5rem;
+}
+.final-msg{
+    font-size: 2.5rem;
+}
+.play-again, .submit{
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.play-again{
+    margin-bottom: 3rem;
+}
+.hangman{
+    width: 80rem;
+    height: 40rem;
+    border: 1px solid black;
+    position: relative;
+}
+.hangman .ten{
+    width: 20rem;
+    height: .4rem;
+    background-color: black;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    /* visibility: hidden; */
+}
+.hangman .nine{
+    height: 30rem;
+    width: .3rem;
+    background-color: black;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    /* visibility: hidden; */
+}
+.hangman .eight{
+    width: 20rem;
+    height: .3rem;
+    background-color: black;
+    position: absolute;
+    bottom: 80%;
+    left: 15%;
+    /* visibility: hidden; */
+}
+.hangman .seven{
+    height: 5rem;
+    width: .4rem;
+    background-color: black;
+    position: absolute;
+    bottom: 68%;
+    left: 40%;
+    /* visibility: hidden; */
+}
+.hangman .six{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 51%;
+    left: 36%;
+    border: 4px solid black;
+    /* visibility: hidden; */
+}
+.hangman .five{
+    height: 10rem;
+    width: .4rem;
+    background-color: black;
+    position: absolute;
+    bottom: 26%;
+    left: 40%;
+    /* visibility: hidden; */
+}
+.hangman .four{
+    height: 6rem;
+    width: .3rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 38%;
+    left: 42.5%;
+    /* visibility: hidden; */
+}
+.hangman .three{
+    height: 6rem;
+    width: .3rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: 38%;
+    left: 37.5%;
+    /* visibility: hidden; */
+}
+.hangman .two{
+    height: 6rem;
+    width: .3rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 13%;
+    left: 37.5%;
+    /* visibility: hidden; */
+}
+.hangman .one{
+    height: 6rem;
+    width: .3rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: 13%;
+    left: 42.5%;
+    /* visibility: hidden; */
+}
+.visibility{
+    visibility: hidden;
+}
